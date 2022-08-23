@@ -1,0 +1,164 @@
+/* General Styling*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(30, 38%, 92%);
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Card Styling*/
+.card{
+    height: 420px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow-y: hidden;
+    border-radius: 7px;
+}
+.card-image{
+    width: 50%;
+}
+.card-image .image1{
+    width: 100%;
+    height: 420px;
+}
+.card-image .image2{
+    display: none;
+}
+.product-bio{
+    width: 50%;
+    padding: 32px;
+
+
+}
+.prices{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 18px;
+
+
+
+}
+.prices h2{
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);;
+}
+.prices p{
+    margin-left: auto;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px
+}
+.product-bio #heading{
+    margin-bottom: 18px;
+    margin-top: 1;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.product-bio h1{
+    margin-bottom: 18px;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    width: 70%;
+    line-height: 30px;
+    color:hsl(212, 21%, 14%);
+    
+}
+.product-bio #descrpition{
+    margin-bottom: 32px;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    width: 90%;
+
+}
+button{
+    width: 100%;
+    height: 50px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+button img{
+    padding-right: 10px;
+}
+.attribution{
+    text-align: center;
+    font-size: 11px; 
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+/* Mobile Styling*/
+
+@media only screen and (max-width: 792px){
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        margin: 10%;
+
+        
+    }
+    .card-image{
+        width: 100%;
+    }
+    .card-image .image1{
+        display: none;
+    }
+    .card-image .image2{
+        display: block;
+        width: 100%;
+        background-size: cover;
+
+    }
+    .prices{
+        margin-bottom: 9px;
+    }
+    .product-bio #heading{
+        margin-bottom: 9px;
+    }
+    .product-bio h1{
+        margin-bottom: 18px;
+        width: 100%;
+    }
+    .product-bio #descrpition{
+        margin-bottom: 18px;
+    }
+    .product-bio{
+        padding: 32px;
+
+        width: 80%;
+    }
+}
+
+
+    
+
